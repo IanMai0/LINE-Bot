@@ -18,11 +18,10 @@ import speech_recognition as sr
 # create flask server
 app = Flask(__name__)
 # your linebot message API - Channel access token (from LINE Developer)
-line_bot_api = LineBotApi(
-    'GCd4/NMhrvJ7sSwntRSVNM5v7wD5qUAl1m+Sa0NNV4/5ovSX8V5p9CBXvm2JgevdjAIMjEBaGNJyb1ED99AfQb9MWY+dBmp5dDtZCdFdRwLyglGR7/32At5Xdt1kX6Jae0mfTEBhfZPPh4Oxif/IpAdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('your Channel access token')
 
 # your linebot message API - Channel secret
-handler = WebhookHandler('7a5930f965c6055bbbd755d74f1aeac9')
+handler = WebhookHandler('your Channel secret')
 
 
 @app.route("/callback", methods=['POST'])
