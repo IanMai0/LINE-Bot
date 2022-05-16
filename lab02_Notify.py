@@ -12,7 +12,6 @@ print(f'price： {price}')
 if int(price) < 5000:  # 將爬取的價格字串轉型為整數
     headers = {
         # "Authorization": "Bearer " + "你的權杖(token)",
-        "Authorization": "Bearer " + "YHySxX0ZbnBJRsFHM2rJC7N9vijiwpnWHx1J7FUZnIE",  # Q
 
         "Content-Type": "application/x-www-form-urlencoded"
     }
