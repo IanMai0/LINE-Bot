@@ -12,10 +12,10 @@ import requests
 app = Flask(__name__)
 # your linebot message API - Channel access token (from LINE Developer)
 line_bot_api = LineBotApi(
-    'U+HleUe7Z0G70b+297u2P1GmLnyEWxXZ9lQkwRN6dUfqY8qJs17JD4kN1ON22s/KpJIiLD8EXlbk+Azyrty6DxryELBLQaWoNgbfVjbCQIhvo1ANB4vEl8Ej40+bAyAI4+Ud9hmny6AtfaPN/ZvKgQdB04t89/1O/w1cDnyilFU=')
+    'your channel access token ')
 
 # your linebot message API - Channel secret
-handler = WebhookHandler('b9d67b3bb13fe4e13c0b220a36292345')
+handler = WebhookHandler('your Channel secret ')
 
 
 @app.route("/callback", methods=['POST'])
